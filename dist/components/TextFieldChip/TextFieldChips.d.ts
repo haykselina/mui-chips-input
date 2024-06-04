@@ -1,0 +1,53 @@
+import { default as React } from 'react';
+import { MuiChipsInputChip, MuiChipsInputChipComponent, MuiChipsInputChipProps, MuiChipsInputProps } from '../../index.types';
+
+declare const TextFieldChips: React.ForwardRefExoticComponent<(Omit<import('@mui/material/TextField').FilledTextFieldProps & {
+    chips: MuiChipsInputChip[];
+    onAddChip?: ((chip: MuiChipsInputChip) => void) | undefined;
+    onEditChip?: ((chip: MuiChipsInputChip, chipIndex: number) => void) | undefined;
+    clearInputOnBlur?: boolean | undefined;
+    addOnBlur?: boolean | undefined;
+    hideClearAll?: boolean | undefined;
+    disableDeleteOnBackspace?: boolean | undefined;
+    addOnWhichKey?: string | string[] | undefined;
+    disableEdition?: boolean | undefined;
+    inputValue?: string | undefined;
+    validate?: MuiChipsInputProps['validate'];
+    onInputChange?: ((inputValue: string) => void) | undefined;
+    onDeleteChip?: ((chipIndex: number) => void) | undefined;
+    onDeleteAllChips?: (() => void) | undefined;
+    renderChip?: ((ChipComponent: MuiChipsInputChipComponent, key: React.Key, ChipProps: MuiChipsInputChipProps) => JSX.Element) | undefined;
+}, "ref"> | Omit<import('@mui/material/TextField').OutlinedTextFieldProps & {
+    chips: MuiChipsInputChip[];
+    onAddChip?: ((chip: MuiChipsInputChip) => void) | undefined;
+    onEditChip?: ((chip: MuiChipsInputChip, chipIndex: number) => void) | undefined;
+    clearInputOnBlur?: boolean | undefined;
+    addOnBlur?: boolean | undefined;
+    hideClearAll?: boolean | undefined;
+    disableDeleteOnBackspace?: boolean | undefined;
+    addOnWhichKey?: string | string[] | undefined;
+    disableEdition?: boolean | undefined;
+    inputValue?: string | undefined;
+    validate?: MuiChipsInputProps['validate'];
+    onInputChange?: ((inputValue: string) => void) | undefined;
+    onDeleteChip?: ((chipIndex: number) => void) | undefined;
+    onDeleteAllChips?: (() => void) | undefined;
+    renderChip?: ((ChipComponent: MuiChipsInputChipComponent, key: React.Key, ChipProps: MuiChipsInputChipProps) => JSX.Element) | undefined;
+}, "ref"> | Omit<import('@mui/material/TextField').StandardTextFieldProps & {
+    chips: MuiChipsInputChip[];
+    onAddChip?: ((chip: MuiChipsInputChip) => void) | undefined;
+    onEditChip?: ((chip: MuiChipsInputChip, chipIndex: number) => void) | undefined;
+    clearInputOnBlur?: boolean | undefined;
+    addOnBlur?: boolean | undefined;
+    hideClearAll?: boolean | undefined;
+    disableDeleteOnBackspace?: boolean | undefined;
+    addOnWhichKey?: string | string[] | undefined;
+    disableEdition?: boolean | undefined;
+    inputValue?: string | undefined;
+    validate?: MuiChipsInputProps['validate'];
+    onInputChange?: ((inputValue: string) => void) | undefined;
+    onDeleteChip?: ((chipIndex: number) => void) | undefined;
+    onDeleteAllChips?: (() => void) | undefined;
+    renderChip?: ((ChipComponent: MuiChipsInputChipComponent, key: React.Key, ChipProps: MuiChipsInputChipProps) => JSX.Element) | undefined;
+}, "ref">) & React.RefAttributes<HTMLDivElement>>;
+export default TextFieldChips;
